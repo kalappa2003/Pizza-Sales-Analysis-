@@ -54,14 +54,10 @@ The following key metrics are calculated across the dataset:
 - **Best Seller (Quantity & Orders):** The Classic Deluxe Pizza
 - **Worst Performer:** The Brie Carre Pizza (lowest revenue, quantity, and orders)
 
-
-
-
-
-
 ## 🗄️ SQL Queries
+- <a href="https://github.com/kalappa2003/Pizza-Sales-Analysis-/blob/main/PIZZA%20SALES%20SQL%20QUERIES_SCREENSHOTSS.pdf">sql_queries</a>
 
-All SQL queries are documented in `PIZZA_SALES_SQL_QUERIES.docx`. Key query categories include:
+All SQL queries are documented in `PIZZA_SALES_SQL_QUERIES.pdf`. Key query categories include:
 
 - KPI calculations (Total Revenue, Avg Order Value, etc.)
 - Daily and monthly order trends
@@ -69,50 +65,18 @@ All SQL queries are documented in `PIZZA_SALES_SQL_QUERIES.docx`. Key query cate
 - Top 5 and Bottom 5 pizza performers by revenue, quantity, and orders
 
 **Sample Query — Total Revenue:**
-```sql
+sql
 SELECT SUM(total_price) AS Total_Revenue 
 FROM pizza_sales;
-```
 
 **Sample Query — Top 5 Pizzas by Revenue:**
-```sql
+ sql
 SELECT TOP 5 pizza_name, 
        SUM(total_price) AS Total_Revenue
 FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Revenue DESC;
 ```
-
----
-
-## 🚀 How to Run This Project
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/pizza-sales-analysis.git
-   cd pizza-sales-analysis
-   ```
-
-2. **Import data into SQL Server**
-   - Create a database and import `pizza_sales.csv`
-   - Run queries from `PIZZA_SALES_SQL_QUERIES.docx`
-
-3. **Open Power BI Dashboard**
-   - Open `Pizza_Sales_Dashboard.pbix` in Power BI Desktop
-   - Refresh data source to point to your local CSV or SQL Server
-
----
-
-## 📸 Dashboard Preview
-
-### Home Page
-![Home Dashboard](screenshots/home_dashboard.png)
-
-### Best/Worst Sellers Page
-![Best Worst Sellers](screenshots/best_worst_sellers.png)
-
-
-
 
 
 ## 🛠️ Tools & Technologies
