@@ -4,3 +4,6 @@ This project analyzes a pizza restaurant's sales data to uncover business insigh
 ## Dataset Used
 - <a href="https://github.com/kalappa2003/Pizza-Sales-Analysis-/blob/main/pizza_sales%20(1).csv">Dataset</a>
   
+## Dashboards
+- <a href="https://github.com/kalappa2003/Pizza-Sales-Analysis-/blob/main/image.png">Dashboard</a>
+- <a href="https://github.com/kalappa2003/Pizza-Sales-Analysis-/blob/main/Screenshot%202026-05-29%20151855.png">Dashboards</a> 
